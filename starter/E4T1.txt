@@ -2,4 +2,12 @@
 
 # Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
 
+- Disable SSH password access
+- Use Privileged Access Management (PAM) Tool with Identity Federation or AWS SSM (AWS Systems Manager)
+- Disable SSH accesd and use immutable instances
+- Restrict SSH port access with ACL rule
+
 # Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+
+- Use AWS Role instead of API keys
+https://aws.amazon.com/blogs/security/how-to-restrict-amazon-s3-bucket-access-to-a-specific-iam-role/

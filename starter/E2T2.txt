@@ -1,3 +1,12 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
+- Many common TCP and UDP ports of EC2 instance are reachable from the internet.
+- Security group for application server allows incoming SSH and RDP traffic
+- Access logging is not enabled for S3 buckets
+- S3 bucket server side encryption is not enabled
+
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+- Update security group to permit only HTTP/HTTPS ports
+- Enable S3 server access logging
+- Enable S3 server side encryption

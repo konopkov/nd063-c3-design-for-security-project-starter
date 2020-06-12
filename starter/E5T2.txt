@@ -2,12 +2,41 @@
 
 ## Scan infrastructure as code templates
 
+CloudFormation
+    - Cfripper
+    - Cloudsploit
+    - cfn-lint
+Terraform
+    - Chef inspec
+    - Open policy agent / Regula
+    - Terrascan
+
 ### Example vulnerability
+
+Regula can check if Terraform template define any overly permissive IAM Policy alowing full access to any service
+"Action": [
+    "*"
+]
+"Resource": "*"
 
 ##Scan AMI’s or containers for OS vulnerabilities
 
+- Latest security patches can be applyed during building image:
+https://aws.amazon.com/blogs/devops/how-to-create-an-ami-builder-with-aws-codebuild-and-hashicorp-packer/
+
+- Qualys Scanner can be integrated in Golden AMI Pipeline 
+https://aws.amazon.com/blogs/apn/creating-a-golden-ami-pipeline-integrated-with-qualys-for-vulnerability-assessments/
+
+- Continious Vulnerability Assessments could be implemented with Amazon Inspector
+https://aws.amazon.com/blogs/security/how-to-set-up-continuous-golden-ami-vulnerability-assessments-with-amazon-inspector/
+
 ### Example vulnerability
+SSH server vulnerability allowing server access discovered. Security paches shold be applied
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config
+- AWS Inspect
+- AWS Security Hub
 
 ### Example vulnerability
+- Unrestricted S3 bucket public access with no encryption enabled can lead to sensetive data leak

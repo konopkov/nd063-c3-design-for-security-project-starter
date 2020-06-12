@@ -1,5 +1,7 @@
 Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Poor practice 1
+RecipeWebServiceInstance belongs to PublicSubnetTrusted and accessible from Internet. Should be moved into private subnet and expose only HTTP port only for Application Load Balancer.
 
 # Poor practice 2
+InstanceRolePolicy-C3 configured to execute any action (Action: 's3:*') with any bucket (Resource: '*'). Should be configured with least privilege permissions.
