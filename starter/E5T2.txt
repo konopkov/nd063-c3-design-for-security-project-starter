@@ -26,6 +26,7 @@ https://aws.amazon.com/blogs/devops/how-to-create-an-ami-builder-with-aws-codebu
 
 - Qualys Scanner can be integrated in Golden AMI Pipeline 
 https://aws.amazon.com/blogs/apn/creating-a-golden-ami-pipeline-integrated-with-qualys-for-vulnerability-assessments/
+https://aws.amazon.com/marketplace/solutions/security/vulnerability-assessment
 
 - Continious Vulnerability Assessments could be implemented with Amazon Inspector
 https://aws.amazon.com/blogs/security/how-to-set-up-continuous-golden-ami-vulnerability-assessments-with-amazon-inspector/

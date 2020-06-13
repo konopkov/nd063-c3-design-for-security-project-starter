@@ -3,11 +3,8 @@
 - An attack is performed agains the instance
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+GuardDuty analyzes and processes VPC flow log, AWS CloudTrail event log, and DNS log data sources. GuardDuty consumes VPC Flow Log events directly from the VPC Flow Logs feature through an independent and duplicative stream of flow logs. GuardDuty extracts various fields from these logs for profiling and anomaly detection, and then discards the logs. 
 This finding is generated only through GuardDuty monitoring traffic on port 22.
-Using data sources:
-- AWS CloudTrail event logs
-- VPC Flow Logs
-- DNS logs
 
 https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_unauthorized.html#unauthorized9
 https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html
